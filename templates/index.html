@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+body
+{
+  font-style: 'Lato';
+  font-size: 14px;
+  background-color: #ffffff;
+  color: #212121;
+  line-height: 1.4;
+
+
+}
+.pin input{
+  display: inline-block;
+position: relative;
+padding: 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 2px;
+    font-weight: 500;
+    cursor: pointer;
+    width: 358px;
+    margin-top: 12px;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+
+
+}
+.sub input
+{
+  background-color: orange;
+  border: 2px solid #f0f0f0;
+  color: #ffff	;
+  border-radius: 5px;
+  padding: 8px 8px;
+
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 19px;
+  margin: 4px 2px;
+  cursor: pointer;
+  margin-left: 0px;
+  padding-left: 40px;
+  padding-right: 40px;
+
+}
+
+ .productN
+ {
+
+
+ line-height: 1.4;
+ font-size: 15px;
+color: #343c4e;
+  padding: 0;
+ 	padding-bottom: 2px;
+
+
+ }
+
+ .hgj
+ {
+ font-size: 20px;
+ color
+ }
+
+
+</style>
+</head>
+<body>
+
+<center class="fg">
+  <div class="productN"><h1>IIID Internship Assignment Demonstartion Flask Application</h1></div>
+<form action="{{ url_for('tdb') }}" method="POST">
+  <div class="hgj">Source Stop  </div>
+  <div class="pin">
+  <input type="text" name="source" >
+  </div>
+  <div class="hgj">Destination Stop</div>
+  <div class="pin">
+  <input type="text" name="destination">
+  <br><br>
+  </div>
+  <div class="sub">
+  <input type="submit" value="Submit">
+    </div>
+</form>
+</center>
+</body>
+</html>
